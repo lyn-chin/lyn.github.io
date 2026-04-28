@@ -1,0 +1,113 @@
+/*---更換全站字體---*/
+/* 選取 body 和所有標題，以及 subheading，將字體設為思源黑體 */
+body,
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1,
+.subheading {
+    font-family: "Noto Sans TC", sans-serif;
+    /* 取消模板預設的英文字母大寫 */
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+/*---主題顏色---*/
+:root {
+    --bs-primary-rgb: 187, 123, 133;
+    /* 統一連結顏色*/
+    --bs-link-color: #313857;
+    --bs-link-hover-color: rgb(187, 123, 133);
+}
+
+/* 社群圖示的 hover 顏色 */
+.social-icons .social-icon:hover {
+    background-color: rgb(187, 123, 133);
+}
+
+/*---區塊背景---*/
+.resume-section {
+    background-color: rgb(255, 241, 242);
+}
+
+/*---搜索欄背景---*/
+.bg-primary {
+    background-color: #bb7b85;
+    background-image: url(../img/climpek.png);
+}
+
+/*---頁面大小調整---*/
+section.resume-section {
+    display: flex;
+    align-items: center;
+    padding-left: 2.5rem;
+    padding-right: 2rem;
+    max-width: 100%;
+}
+
+/*---更改字體顏色---*/
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
+    color: #313857;
+}
+
+/*---更改icon顏色---*/
+.social-icons .social-icon {
+    background-color: #313857;
+}
+
+/*---按鈕顏色---*/
+.btn-primary {
+    background-color: #bb7b85;
+    color: #fff1f2;
+}
+
+.btn-primary:hover {
+    background-color: #fff1f2;
+    color: #bb7b85;
+    border-color: #fff1f2;
+}
+
+/*---小寫---*/
+.card-title {
+    text-transform: none;
+}
+
+.subheading {
+    color: #313857;
+    font-weight: bold;
+}
+
+#about .subheading {
+    text-transform: none;
+}
+
+@media (max-width: 767.98px) {
+    #about .subheading {
+        font-size: 1.3rem;
+    }
+}
+
+#experience .subheading {
+    font-size: 1.3rem;
+}
